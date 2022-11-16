@@ -1,6 +1,6 @@
 # editable-product-list
 
-Editable:<br />
+Editable Product List:<br />
 https://sw-jwd-elc.000webhostapp.com/ <br />
 
 ![product_list](https://user-images.githubusercontent.com/45064822/202216020-c76ad4db-dca6-441f-9dd4-667f0e164911.png)
