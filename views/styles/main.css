@@ -1,0 +1,193 @@
+/*
+    Stylesheet for both Product List and Product Add page.
+*/
+
+
+*{
+    font-family: Courgette;
+}
+
+.body{
+    background: linear-gradient(to bottom right, rgb(249, 224, 127),rgb(249, 173, 106));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* ====== Product List Page ===== */
+
+.header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+
+    background-color: rgb(236, 213, 159);
+    border-bottom: 1px solid black;
+    height: 20vh;
+
+    padding: 0px;
+    margin: 0px;
+    z-index: 99;
+}
+
+.page_title{
+    color: black;
+    font-size: 4vh;
+    padding: 0px;
+    margin: 0px 0px 0px 3%;
+}
+
+.button_div{
+    position: fixed;
+    top: 13vh;
+    right: 0px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+
+    padding: 0px;
+    margin: 0px 5% 0px 0px;
+}
+
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    color: black;
+    background-color: rgba(255, 255, 255, 0.3);
+
+    font-size: 3vh;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+
+    height: 5vh;
+    padding: 1vh 2vh;
+    margin: 0px 1vh;
+    cursor: pointer;
+}
+
+.button-link{
+    color: black;
+    text-decoration: none;
+}
+
+.container{
+    position: absolute;
+    top: 25vh;
+    left: 0px;
+    right: 0px;
+}
+
+.product-list{
+    display: grid;
+    grid-gap: 5%;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 0 5%;
+}
+
+.product-div{
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    height: 25vw;
+    min-height: 300px;
+
+    padding: 2vh 1vh;
+    margin: 0px;
+    border: 1px solid rgba(212, 108, 78, 0.3);
+    border-radius: 16px;
+}
+
+.delete-checkbox{
+    position: relative;
+    top: 0px;
+    left: 3%;
+
+    width: 8%;
+    height: 8%;
+}
+
+.product-detail-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+}
+
+.product-sku,
+.product-name,
+.product-price,
+.product-detail{
+    padding: 0px;
+    margin: 0px;
+}
+
+.product-sku{
+    font-size: 125%;
+    font-weight: 600;
+}
+
+.product-name{
+    font-size: 230%;
+    padding: 8% 0px;
+}
+
+.product-price,
+.product-detail{
+    font-size: 120%;
+    margin-bottom: 5%;
+}
+
+
+/* ===== Product Add Page ===== */
+
+#product_form{
+    position: absolute;
+    top: 25vh;
+    left: 0px;
+    right: 0px;
+}
+
+.form-group{
+    position: relative;
+    left: 5%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 25%;
+    min-width: 300px;
+    margin-bottom: 1%;
+}
+
+.form-control-name{
+    width: 30%;
+}
+
+#sku,
+#name,
+#price,
+#size,
+#height,
+#width,
+#length,
+#weight,
+#productType{
+    width: 70%;
+}
+
+.description{
+    position: relative;
+    left: 5%;
+
+    width: 90%;
+    margin-top: 2.5%;
+}
